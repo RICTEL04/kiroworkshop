@@ -1,0 +1,101 @@
+{
+  "canvas": {
+    "width": 800,
+    "height": 600,
+    "targetFPS": 60
+  },
+  "physics": {
+    "gravity": 0.222,
+    "ascentVelocity": -5,
+    "terminalVelocity": 10
+  },
+  "pipes": {
+    "width": 80,
+    "gapHeight": 140,
+    "spacing": 350,
+    "initialSpeed": 2,
+    "speedIncrement": 0.5,
+    "speedIncrementInterval": 5,
+    "maxSpeed": 8,
+    "minGapY": 150,
+    "maxGapY": 450,
+    "initialX": 400,
+    "spawnX": 900
+  },
+  "collision": {
+    "ghostHitboxWidth": 34,
+    "ghostHitboxHeight": 34,
+    "ghostHitboxPadding": 3,
+    "invincibilityDuration": 1000,
+    "invincibilityFlashFrequency": 10
+  },
+  "audio": {
+    "jumpVolume": 0.6,
+    "scoreVolume": 0.5,
+    "gameOverVolume": 0.7,
+    "musicVolume": 0.3,
+    "musicFadeOutDuration": 500,
+    "maxSoundLatency": 50
+  },
+  "visualEffects": {
+    "screenShake": {
+      "amplitude": 10,
+      "duration": 300
+    },
+    "redFlash": {
+      "duration": 200,
+      "opacity": 0.4
+    },
+    "ghostTint": {
+      "duration": 200,
+      "opacity": 0.6
+    }
+  },
+  "particles": {
+    "trail": {
+      "generationInterval": 2,
+      "initialRadius": 4,
+      "finalRadius": 1,
+      "initialOpacity": 0.6,
+      "lifespan": 20,
+      "maxCount": 100
+    },
+    "scoreIndicator": {
+      "text": "+1",
+      "fontSize": 32,
+      "color": "yellow",
+      "velocityY": -2,
+      "lifespan": 30,
+      "maxCount": 10
+    }
+  },
+  "ghost": {
+    "spriteWidth": 40,
+    "spriteHeight": 40,
+    "startX": 100,
+    "startY": 300,
+    "invincibleOpacity": 0.5
+  },
+  "ui": {
+    "colors": {
+      "background": "#87CEEB",
+      "pipe": "#4CAF50",
+      "text": "white",
+      "highlight": "yellow"
+    },
+    "fonts": {
+      "title": 72,
+      "gameOver": 64,
+      "score": 48,
+      "highScore": 36,
+      "instructions": 28,
+      "small": 20
+    },
+    "pausedOpacity": 0.7
+  },
+  "performance": {
+    "maxPipes": 4,
+    "maxParticles": 50,
+    "collisionCheckMaxTime": 1
+  }
+}
